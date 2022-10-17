@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Plus Jakarta Sans";
+    background-image: linear-gradient(#FFFFFF, #dddeec);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.firstRowHeader{
+    padding: 10px;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.topButton{
+    font-size: 18px;
+    background-color: #13183F;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 32px;
+    z-index:999;
+}
+
+.topButton:hover{
+    background-color: #666CA3;
+}
+
+.secondRowHeader{
+    width: 39%;
+    height: 350px;
+    margin-top: 150px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 800;
+    color: #13183F;
+}
+
+header p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #13183F;
+}
+
+.middleButton{
+    font-size: 18px;
+    background-image: linear-gradient(#F02AA6, #FF6F48);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 32px;  
+}
+
+.middleButton:hover{
+    opacity: 0.5;
+}
+
+.headerImage img{
+    content: url("./assets/image-hero-desktop.png");
+}
+
+.headerImage{
+    position: absolute;
+    left: 52%;
+    top: -25%; 
+}
+
+section{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#firstBox{
+    padding: 50px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    background-image: linear-gradient(#F02AA6, #FF6F48);
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+}
+
+#standartBox{
+    padding: 50px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start;
+    flex-direction: column;
+}
+
+#iconStandartBox{
+    position: absolute;
+    top: -8%;
+    left: 10%
+}
+
+.sectionButton{
+    font-size: 18px;
+    border: none;
+    color: #F74780;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.sectionButton:hover{
+    opacity: 0.5;
+}
+
+section p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #13183F;    
+}
+
+section h2{
+    font-size: 40px;
+    line-height: 51px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+section h3{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #13183F; 
+}
+
+footer{
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: 100px;
+    margin-bottom: -30px;
+    height: 100px;
+    background-color: #13183F;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logoLight{
+    margin-left: 100px;
+}
+
+.bottomButton{
+    margin-right: 100px;
+    font-size: 18px;
+    background-image: linear-gradient(#4851FF, #F02AA6);
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+}
+
+.bottomButton:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 1300px) {
+    .headerImage img{
+        content: url("./assets/image-hero-tablet.png");
+    }
+    .headerImage{
+        position: absolute;
+        left: 60%;
+        top: -10%; 
+    }
+    .secondRowHeader{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .secondRowHeader{
+        width: 100%;
+    }
+    .headerImage img{
+        content: url("./assets/image-hero-mobile.png");
+    }
+    .headerImage{
+        position: absolute;
+        left: -15%;
+        top: 75%;    
+    }
+    #firstBox{
+        margin-top: 250px;
+    }  
+}
